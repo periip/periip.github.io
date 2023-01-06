@@ -1,7 +1,58 @@
-.center {
-  border: 5px solid;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+@font-face {
+  font-family: 'rubikbold';
+  src: url('./fonts/rubik-bold-webfont.woff2') format('woff2'),
+    url('./fonts/rubik-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rubikregular';
+  src: url('./fonts/rubik-regular-webfont.woff2') format('woff2'),
+    url('./fonts/rubik-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.background {
   height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background: linear-gradient(rgba(6, 200, 222, 0.5), transparent);
+  background-color: lightblue;
+}
+
+.titleContainer {
+  width: 40vw;
+  height: 100vh;  
+}
+
+.name {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "rubikbold", serif;
+  font-size: 75px;
+  color: black;
+}
+
+.description {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "rubikregular", serif;
+  font-size: 40px;
+  color: black;
 }

@@ -3,8 +3,15 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className='center'>
-      Hello World
+    <div className='background'>
+      <div className='titleContainer'>
+        <div className='name'>
+          Perry Huang's
+        </div>
+        <div className='description'>
+          personal website
+        </div>
+      </div>
     </div>
   )
 }
