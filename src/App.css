@@ -14,6 +14,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'rubiklight';
+  src: url('./fonts/rubik-light-webfont.woff2') format('woff2'),
+    url('./fonts/rubik-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -22,37 +31,76 @@ html, body {
   overflow-x: hidden;
 }
 
-.background {
+.title-page {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-size: cover;
-  background: linear-gradient(rgba(6, 200, 222, 0.5), transparent);
-  background-color: lightblue;
+  background: #82AAE3
 }
 
-.titleContainer {
-  width: 40vw;
-  height: 100vh;  
+.title-container {
+  width: 50rem;
+  height: 60%;
+  margin: 1.5rem;
 }
 
-.name {
-  height: 70%;
+.image-container {
   width: 100%;
+  height: 40%;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 40%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+}
+
+.title {
+  height: 20%;
+  width: 100%;  
   font-family: "rubikbold", serif;
-  font-size: 75px;
-  color: black;
+  font-size: 3.5em;
+  color: #EAFDFC;
+}
+
+.subtitle {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  font-family: "rubikregular", serif;
+  font-size: 2em;
+  color: #545775;
 }
 
 .description {
-  height: 30%;
+  height: 40%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: "rubikregular", serif;
-  font-size: 40px;
-  color: black;
+  font-family: "rubiklight", serif;
+  font-size: 1.5rem;
+  color: #545775;
+  margin-top: .5em;
+}
+
+.light-blue {
+  background: #91D8E4;
+}
+
+.header-container {
+  height: 10rem;
+  width: 50rem;
+  margin: 1.5rem;
+}
+
+.header-container .header {
+  font-family: "rubikbold", serif;
+  font-size: 2.5em;
+  color: #EAFDFC;
 }
