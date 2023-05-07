@@ -19,11 +19,7 @@ const Cover = () => {
         </div>
       </div>
       <div className='image-container'>
-        <div className='image'>
-          <a href="https://www.vecteezy.com/free-vector/lighthouse" target="_blank" rel="noreferrer">
-            <img src={require('./assets/lighthouse-logo1.png')} alt='' width='230' height='250'/>
-          </a>
-        </div>
+        <img src={require('./assets/capy-grass-removebg-preview.png')} alt='capybara eating grass'/>
       </div>
     </section>
   )
@@ -31,7 +27,7 @@ const Cover = () => {
 
 const Experience = () => {
   return (
-    <section className='title-page'>
+    <section className='title-page' style={{alignItems: 'flex-start'}}>
       <header className='header-container'>
         <h1 className='header'>
           Experience
