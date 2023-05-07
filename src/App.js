@@ -27,7 +27,7 @@ const Cover = () => {
 
 const Experience = () => {
   return (
-    <section className='title-page' style={{alignItems: 'flex-start'}}>
+    <section className='title-page' style={{justifyContent: 'flex-start'}}>
       <header className='header-container'>
         <h1 className='header'>
           Experience
