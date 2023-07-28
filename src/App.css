@@ -1,3 +1,15 @@
+:root {
+  --yellow: #f9cdad;  
+  --beige: #ece5ce;
+  --yellow-beige: #eed5b3;
+  --brown: #774f38;
+  --light-brown: #b8a59c;
+  --white: white;
+  --light-black: #545775;
+  --green: #83af9b;
+  --gray: #818181;
+}
+
 @font-face {
   font-family: 'rubikbold';
   src: url('./fonts/rubik-bold-webfont.woff2') format('woff2'),
@@ -32,7 +44,7 @@
 html, body {
   margin: 0;
   height: 100%;
-  background-color:#b8a59c;
+  background-color: var(--light-brown);
   scroll-behavior: smooth;
 }
 
@@ -51,16 +63,20 @@ dd {
   margin: 0;
 }
 
+section {
+  margin-bottom: 10px;
+}
+
 .title-content {
   font-family: "rubikbold", serif;
   font-size: 3.5em;
-  color: white;
+  color: var(--white);
 }
 
 .title-container-content {
   border-radius: 1rem;
   border-width: 0.25rem;
-  border-color: white;
+  border-color: var(--white);
   border-style: solid;
   padding: 1rem;
   overflow-y: auto;
@@ -69,7 +85,7 @@ dd {
 .description-content {
   font-family: "rubiklight", serif;
   font-size: 1.4em;
-  color: #545775;
+  color: var(--light-black);
 }
 
 .image-container-content {
@@ -79,7 +95,7 @@ dd {
 .subtitle-content {
   font-family: "rubikregular", serif;
   font-size: 2em;
-  color: #545775;
+  color: var(--light-black);
 }
 
 .header-container-content {
@@ -89,11 +105,11 @@ dd {
 .header-text-content {
   font-family: "rubikbold", serif;
   font-size: 2.5em;
-  color: white;
+  color: var(--white);
 }
 
-.ifIneedthiscolor {
-  color: #eed5b3
+.experience-page .header-text-content {
+  color: var(--light-brown)
 }
 
 section {
@@ -102,7 +118,7 @@ section {
 }
 
 .item-design {
-  background: white;
+  background: var(--light-brown);
   border-radius: 2em;
   padding: 2em;
 }
@@ -110,38 +126,37 @@ section {
 .item-text {
   font-family: "rubikregular", serif;
   font-size: 1.6em;
-  color: #545775;
+  color: var(--brown);
 }
 
 .item-subtext {
   font-family: "rubiklight", serif;
   font-size: 1.35em;
-  color: #545775;
+  color: var(--beige);
 }
 
 .item-header {
   font-family: "rubikregular", serif;
   font-size: 2em;
-  color: white;
+  color: var(--light-brown);
 }
 
 .project-item {
-  background: white;
+  background: var(--white);
   border-radius: 2rem;
-  
   padding: 1.5rem;
 }
 
 .project-item-header {
   font-size: 2em;
   font-family: "rubikregular", serif;
-  color: #545775
+  color: var(--light-black);
 }
 
 .project-item-text {
   font-size: 1em;
   font-family: "rubiklight", serif;
-  color: #545775
+  color: var(--light-black);
 }
 
 .sidenav {
@@ -151,23 +166,26 @@ section {
   z-index: 1;
   top: 0;
   left: 0;
-  background: black;
+  background: var(--light-black);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+  white-space: nowrap;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: var(--gray);
   display: block;
   transition: 0.3s;
+  font-family: rubikregular;
+  margin: 10px 0;
 }
 
 .sidenav a:hover {
-  color: white;
+  color: var(--white);
 }
 
 .sidenav .closebtn {
@@ -181,27 +199,71 @@ section {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: var(--white);
   margin: 6px 6px;
   transition: 0.4s;
 }
 
 .change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(200px, 11px) rotate(-45deg);
 }
 
 .change .bar2 {
+  transform: translate(200px);
   opacity: 0;
 }
  
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+  transform: translate(200px, -11px) rotate(45deg);
 }
 
 .button {
-  margin: 10px 5px;
-  display: block;
+  display: inline-block;
   position: fixed;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.speech {
+  height: 20%;
+  width: 80%;
+  font-size: 1.1em;
+  background: var(--beige);
+  position: relative;
+  padding: 100px;
+  border-radius: 50px;
+  margin: 50px auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--brown);
+  font-family: "rubikregular", serif;
+}
+
+
+.speech::after {
+  content: "";
+  border: 30px solid transparent;
+  position: absolute;
+}
+
+.bottom.speech::after {
+  border-left: 24px solid var(--beige);
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(--beige);
+  border-bottom: 20px solid transparent;
+  bottom: -32px;
+  left: 25%;
+  margin-left: -20px;
+}
+
+.image-container img {
+  height: 12.5rem;
+}
+
+.experience-page {
+  background-color: white;
 }
 
 @media (min-width: 1300px) {
@@ -249,11 +311,20 @@ section {
     margin: 1.5rem;
   }
 
-  .image-container {
+  .right-container {
     width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100%;
     height: 40%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .image {
@@ -270,7 +341,8 @@ section {
   }
 
   .item {
-    width: 80%;
+    width: 75%;
+    
   }
 
   .item-left {
@@ -293,17 +365,16 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 5%;
     width: 78%;
-    margin: 0.5rem;
+    margin: 0 0.5rem;
   }
 
   .project-grid {
     display: grid; 
     column-gap: 1.5rem;
-    row-gap: 8rem;
+    row-gap: 4rem;
     grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+    width: 75%;
   }
 
   .project-item-layout {
