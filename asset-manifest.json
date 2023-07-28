@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.94b7fccf.css",
-    "main.js": "/static/js/main.d3573a13.js",
-    "static/media/capy-grass-removebg-preview.png": "/static/media/capy-grass-removebg-preview.fdec6919be2fd322f873.png",
+    "main.css": "/static/css/main.5e08309b.css",
+    "main.js": "/static/js/main.429328ac.js",
+    "static/media/capy-grass-removebg-preview.png": "/static/media/capy-grass-removebg-preview.39046dda7437da707400.png",
     "static/media/rubik-regular-webfont.woff": "/static/media/rubik-regular-webfont.5f57df416d697bb5be1a.woff",
     "static/media/rubik-light-webfont.woff": "/static/media/rubik-light-webfont.613cc25a1fb7d9774b3b.woff",
     "static/media/rubik-bold-webfont.woff": "/static/media/rubik-bold-webfont.4dbe74e57ce852dde340.woff",
@@ -10,11 +10,11 @@
     "static/media/rubik-bold-webfont.woff2": "/static/media/rubik-bold-webfont.6ae8bdeb791f15051f80.woff2",
     "static/media/rubik-light-webfont.woff2": "/static/media/rubik-light-webfont.dee86c619a8309c18999.woff2",
     "index.html": "/index.html",
-    "main.94b7fccf.css.map": "/static/css/main.94b7fccf.css.map",
-    "main.d3573a13.js.map": "/static/js/main.d3573a13.js.map"
+    "main.5e08309b.css.map": "/static/css/main.5e08309b.css.map",
+    "main.429328ac.js.map": "/static/js/main.429328ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.94b7fccf.css",
-    "static/js/main.d3573a13.js"
+    "static/css/main.5e08309b.css",
+    "static/js/main.429328ac.js"
   ]
 }
