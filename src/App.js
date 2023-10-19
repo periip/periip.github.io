@@ -17,7 +17,7 @@ const Cover = () => {
           and welcome to my personal website!
         </div>
         <div className='description description-content'>
-          I'm a first year UBC student hoping to pursue a Bachelor's in Computer Science. I am currently learning React and have experience in React Native, Javascript, and Java. I love to game, discover new music, exercise, and occasionally read books.
+          I'm a second year UBC student majoring in Computer Science . I am have experience in React, React Native, Javascript, and Java. I love to game, discover new music, exercise, and occasionally read books.
         </div>
       </div>
       <div class='right-container'>
